@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/navbar.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/formulario.css">
+
+</head>
+
+<body>
+    <main class="principal">
+        <div class="container">
+            <h1>Formulario de Contacto</h1>
+            <p>Por favor rellene los campos a continuacion</p>
+
+            <form>
+                <label for="name">Nombre</label><input id="name" type="text">
+
+                <label for="surname">Apellido</label><input id="surname" type="text">
+
+                <label for="dni">DNI</label><input id="dni" type="text pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 digitos" minlength="8" maxlength="8" required>
+
+                <label for="email">Email</label><input id="email" type="email" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

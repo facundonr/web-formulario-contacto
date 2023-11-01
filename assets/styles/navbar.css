@@ -1,0 +1,41 @@
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    position: fixed;
+    scroll-behavior: smooth;
+}
+
+.content{
+    margin: 0 10%;
+}
+
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sections{
+    width: 50%;
+    list-style-type: none;
+}
+.navbar ul li{
+    float: right;
+}
+
+.sections li a{
+    padding-left: 25px;
+    text-decoration: none;
+    color: rgb(20,20,20);
+}
+
+.sections li a:hover{
+    color: rgb(80, 80, 80);
+}
