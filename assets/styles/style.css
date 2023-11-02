@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif !important;
 }
 
 body{
     width: 100%;
     height: 100vh;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     background-image: linear-gradient(rgba(200,200,200,0.5), rgba(200,200,200,0.8)), url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;

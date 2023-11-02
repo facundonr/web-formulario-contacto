@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./assets/styles/navbar.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,22 +22,31 @@
             <p>Por favor rellene los campos a continuacion</p>
 
             <form>
-                <label for="name">Nombre</label><input id="name" type="text">
+                <label for="name">Nombre</label><input class="square" id="name" type="text">
 
-                <label for="surname">Apellido</label><input id="surname" type="text">
+                <label for="surname">Apellido</label><input class="square" id="surname" type="text">
 
-                <label for="dni">DNI</label><input id="dni" type="text pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 digitos" minlength="8" maxlength="8" required>
+                <label for="dni">DNI</label><input class="square" id="dni" type="text pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 digitos" minlength="8" maxlength="8" required>
 
-                <label for="email">Email</label><input id="email" type="email" required>
+                <label for="email">Email</label><input class="square" id="email" type="email" required>
 
-                <input type="submit" value="Enviar">
+                <label for="tipo-seguro" >Tipo de Seguro</label>
+                <select name="tipo-seguro" id="tipo-seguro" class="inline select" onchange="tipoPlan()">
+                    <option selected value="0">Seleccionar plan</option>
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="premium">Premium</option>
+                </select>
+
+                <input type="text" id="monto-plan" class="inline square" value="0">
+
+                <input class="inline button send" type="submit" value="Enviar">
+                <input class="inline button reset" type="reset" value="Limpiar">
             </form>
-
         </div>
-
     </main>
 
-    <footer></footer>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
