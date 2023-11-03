@@ -13,7 +13,7 @@ function tipoPlan() {
             }else{
                 montoPlan = 0;
             }
-            
+
         }
     }
     document.getElementById("monto-plan").value = "$" + montoPlan;

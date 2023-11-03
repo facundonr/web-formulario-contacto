@@ -3,12 +3,11 @@
     height: 80px;
 }
 
-
 header{
     width: 100%;
     background-color: rgb(228, 228, 228);
     position: fixed;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth 5s !important;
 }
 
 .content{
